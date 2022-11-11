@@ -1,7 +1,14 @@
 package blackjack;
 
+import java.util.Scanner;
+
 public class Menu {
+
+
+
     public static void menu(){
+
+
         System.out.println("_________________");
         System.out.println("Press P to start");
         System.out.println("Press B for balance");

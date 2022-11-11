@@ -15,6 +15,11 @@ public class Main {
     private static int bet = 0;
     private static int balance = 1000;
     public static void main(String[] args) {
+        String name;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("hello, what is your name?");
+        name = scanner.nextLine();
+        System.out.println("Hello " + name);
 
         boolean exitGame = false;
         String playerChoice;
@@ -40,7 +45,7 @@ public class Main {
 }
     private static void playGame(){
         clearHands();
-        houseHand.add(1);
+        //houseHand.add(1);
        //playerHand.add(1);
         bet = getBet(balance);
         balance = getBalance(bet, balance);
@@ -210,6 +215,7 @@ public class Main {
 
 
 
+
     private static void greeting() {
         System.out.println("Welcome to blackjack 3000!");
     }
@@ -217,5 +223,7 @@ public class Main {
         playerHand.clear();
         houseHand.clear();
     }
+
+
 
 }
